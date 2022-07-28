@@ -110,6 +110,7 @@ body {
 }
 
 .decision-btn {
+    font-family: var(--main-font);
     background-color: var(--accent-color);
     color: var(--common-white);
     font-size: var(--text-medium);
@@ -221,6 +222,7 @@ body {
 
 .project-filter-item {
     background: var(--common-grey);
+    font-family: var(--main-font);
     font-size: var(--text-medium);
     font-weight: 500;
     line-height: 1.6;
