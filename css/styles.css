@@ -15,9 +15,9 @@
 }
 
 /* general */
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
 body {
     font-family: var(--main-font);
