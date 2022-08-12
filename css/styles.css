@@ -110,7 +110,7 @@ img {
 }
 
 .navigation-list {
-    font-size: var(--text-size);
+    font-size: var(--text-small);
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -120,6 +120,7 @@ img {
 
 
 .navigation-link {
+    font-size: var(--text-small);
     color: var(--primary-color);
     text-decoration: none;
     display: block;
@@ -170,21 +171,10 @@ img {
     background-size: cover;
 }
 
-/* .icon-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
-/* .contact-icon:hover,
-.contact-icon:focus {
-    fill: currentColor;
-} */
 .contact-item {
     display: flex;
     align-items: center;
-    /* width: 10px;
-    height: 16px; */
 }
 
 .contact-icon {
@@ -225,6 +215,7 @@ img {
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .decision-btn:focus,
@@ -440,12 +431,21 @@ img {
     background-color: var(--footer-color);
 }
 
+.address {
+    margin-top: 20px;
+}
+
 .address-list {
-    display: inline-block;
     list-style: none;
     font-style: normal;
-    margin-top: 20px;
+}
 
+.address-item {
+    margin-bottom: 9px;
+}
+
+.address-item:last-child {
+    margin-bottom: 0;
 }
 
 .address-link:hover,
@@ -468,7 +468,6 @@ img {
 
 .contact-link-footer {
     display: block;
-    margin-top: 9px;
     color: var(--secondary-color);
     font-size: var(--text-small);
     font-weight: 500;
@@ -498,7 +497,7 @@ img {
 
 .subscription {
     display: block;
-    padding-top: 12px;
+
     margin-left: 70px;
 
 }
@@ -530,6 +529,7 @@ img {
 }
 
 .center {
+    align-items: baseline;
     display: flex;
     flex-wrap: wrap;
 }
@@ -578,7 +578,6 @@ img {
 }
 
 .project-item {
-    overflow: hidden;
     width: 370px;
     display: block;
     list-style: none;
@@ -588,10 +587,11 @@ img {
     display: block;
     text-decoration: none;
     color: var(--primary-color);
+
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link:hover,
+.project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
