@@ -125,7 +125,6 @@ img {
     text-decoration: none;
     display: block;
     padding: 32px 2px;
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
@@ -576,7 +575,6 @@ img {
 
 .subscription-self {
     width: 570px;
-    height: 86px;
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
@@ -706,12 +704,13 @@ img {
 }
 
 .form-input {
+    outline: none;
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
-    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-wrap {
@@ -728,7 +727,7 @@ img {
 }
 
 .form-input:focus {
-    outline-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .form-input:focus+.input-icon {
@@ -808,6 +807,9 @@ img {
 }
 
 .modal-text {
+
+    display: block;
+    outline: none;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -815,14 +817,15 @@ img {
     resize: none;
     padding: 12px 16px;
     margin-bottom: 20px;
-    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text:focus {
-    outline-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .form-btn {
+
     width: 200px;
     height: 50px;
     font-family: var(--main-font);
@@ -836,16 +839,10 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.form-btn-center {
-    position: relative;
-}
-
 
 
 .is-hidden {
