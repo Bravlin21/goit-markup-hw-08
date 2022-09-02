@@ -1,0 +1,42 @@
+/* About */
+.about {
+    padding-top: 0;
+}
+
+.about__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: var(--text-title);
+    line-height: 1.17;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.about__image-wrap {
+    position: relative;
+}
+
+.about__text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-family: var(--main-font);
+    font-size: var(--text-small);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--common-white);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
