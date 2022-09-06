@@ -1,8 +1,8 @@
-.team {
+.section--light-bg {
     background-color: var(--common-grey);
 }
 
-.team__title {
+.section__title {
     margin-bottom: 50px;
     text-align: center;
     font-size: var(--text-title);
@@ -11,7 +11,7 @@
     letter-spacing: 0.03em;
 }
 
-.cards__list {
+.cards {
     display: flex;
     gap: 30px;
     list-style: none;

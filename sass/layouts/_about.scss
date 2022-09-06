@@ -1,9 +1,9 @@
-/* About */
-.about {
+/* section */
+.section--nopadding-top {
     padding-top: 0;
 }
 
-.about__title {
+.section__title {
     margin-bottom: 50px;
     text-align: center;
     font-size: var(--text-title);
@@ -12,7 +12,7 @@
     letter-spacing: 0.03em;
 }
 
-.about__list {
+.about {
     display: flex;
     justify-content: space-between;
     list-style: none;

@@ -1,5 +1,5 @@
 /* features */
-.features__list{
+.features{
     display: flex;
     gap: 30px;
     list-style: none;
@@ -23,7 +23,7 @@
     letter-spacing: 0.03em;
 }
 
-.features__img {
+.features__img-box {
     display: flex;
     justify-content: center;
     align-items: center;
