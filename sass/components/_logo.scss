@@ -1,12 +1,15 @@
 .logo {
-    margin-right: 90px;
-    font-family: var(--secondary-font);
-    font-size: var(--text-big);
+    margin-right: 0x;
     color: $accent-color;
     text-decoration: none;
-    line-height: 1.19;
     letter-spacing: 0.03em;
-
+    font-family: var(--secondary-font);
+    font-size: var(--text-big);
+    font-weight: 700;
+    line-height: 1.17;   
+    @include desktop {
+        line-height: 1.19;  
+    }
 }
 
 .logo__footer {

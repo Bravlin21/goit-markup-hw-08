@@ -1,6 +1,11 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {
+        
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 body {
@@ -9,7 +14,7 @@ body {
     margin: 0;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+
+.no-scroll {
+    overflow: hidden;
 }

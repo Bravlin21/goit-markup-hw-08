@@ -1,6 +1,8 @@
 /* section */
 .section--nopadding-top {
     padding-top: 0;
+    @media  screen and (max-width: 1200px) {
+       display: none;}
 }
 
 .section__title {

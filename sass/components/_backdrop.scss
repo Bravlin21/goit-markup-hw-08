@@ -6,6 +6,8 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 300ms linear, visibility 300ms;
+   
+
 }
 
 .modal {
@@ -13,12 +15,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    max-width: 100%;
+    width: 100%;
     min-height: 581px;
     background: var(--common-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    @include mobile {
+        padding: 40px;
+        width: 100%;
+        max-width: 450px;
+    }
+    @include tablet {
+        width: 100%;
+        max-width: 450px;
+    }
+    @include desktop {
+        max-width: 528px;
+        padding: 40px;
+    }
 }
 
 .modal-close {
@@ -49,10 +67,13 @@
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 12px;
+    
+    @include desktop {
+        margin-bottom: 12px;
+    }
 }
 
 .input-field {
@@ -109,20 +130,28 @@
 .check-text {
     display: flex;
     align-items: center;
-    font-size: var(--text-small);
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.67;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     margin-right: 7px;
+    @include desktop {
+        font-size: var(--text-small);
+        line-height: 1.71;
+    }
 }
 
 .underline {
     display: flex;
     font-weight: 400;
-    font-size: var(--text-small);
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.67;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    @include desktop {
+        font-size: var(--text-small);
+        line-height: 1.71;  
+    }
 }
 
 .check-text span {
