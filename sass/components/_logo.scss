@@ -1,5 +1,5 @@
 .logo {
-    margin-right: 0x;
+    margin-right: 0;
     color: $accent-color;
     text-decoration: none;
     letter-spacing: 0.03em;
@@ -7,8 +7,12 @@
     font-size: var(--text-big);
     font-weight: 700;
     line-height: 1.17;   
+    @include tablet {
+        margin-right: 90px;
+    }
     @include desktop {
-        line-height: 1.19;  
+        line-height: 1.19; 
+         
     }
 }
 

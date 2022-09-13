@@ -36,14 +36,10 @@ text-align: start;
 }
 
 .features__text {
-    text-align: center;
     color: var(--secondary-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-weight: 400;
-@include tablet {
-        text-align: start;
-    }
 }
 
 .features__img-box {

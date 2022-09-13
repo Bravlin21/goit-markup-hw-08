@@ -1,14 +1,15 @@
 .project-filter {
     display: flex;
-    gap: 8px;
+    gap: 15px 8px;
     flex-wrap: wrap;
-        margin-bottom: 50px;
+    margin-bottom: 40px;
     list-style: none;
     @include tablet {
         justify-content: center;
+        margin-bottom: 30px;
     }
     @include desktop {
-        justify-content: center;
+        margin-bottom: 50px;
     }
 }
 
